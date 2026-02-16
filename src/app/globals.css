@@ -12,6 +12,16 @@
 
   --animate-fade-in: fade-in 0.5s ease-out forwards;
   --animate-fade-in-up: fade-in-up 0.7s ease-out forwards;
+  --animate-pulse-slow: pulse-slow 8s infinite ease-in-out;
+  --animate-float: float 6s infinite ease-in-out;
+}
+
+.text-gradient-vibrant {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF0080] via-[#7928CA] to-[#FF0080];
+}
+
+.bg-gradient-vibrant {
+  @apply bg-gradient-to-br from-[#FF0080] via-[#7928CA] to-[#FF0080];
 }
 
 @keyframes fade-in {
@@ -33,6 +43,32 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes pulse-slow {
+
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
   }
 }
 
