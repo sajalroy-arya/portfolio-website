@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Syne } from "next/font/google";
 import "./globals.css";
+import { CustomCursor } from "@/components/CustomCursor";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${inter.variable} ${syne.variable} antialiased bg-background text-foreground selection:bg-purple-500/30 selection:text-white`}
       >
         {children}
+        <CustomCursor />
       </body>
     </html>
   );

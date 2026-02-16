@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { Scene3D } from "./Scene3D";
 
 export function Hero() {
     return (
@@ -10,33 +11,8 @@ export function Hero() {
             <div className="absolute inset-0 bg-noise pointer-events-none z-20 opacity-20 mix-blend-overlay"></div>
 
             {/* Abstract Glowing Sphere/Ring */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">
-                <motion.div
-                    animate={{
-                        scale: [1, 1.1, 1],
-                        opacity: [0.3, 0.5, 0.3],
-                        rotate: [0, 90, 180]
-                    }}
-                    transition={{
-                        duration: 10,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full border border-purple-500/20 bg-gradient-to-br from-purple-500/10 to-transparent backdrop-blur-3xl shadow-[0_0_100px_rgba(168,85,247,0.2)]"
-                />
-                <motion.div
-                    animate={{
-                        scale: [1.1, 1, 1.1],
-                        opacity: [0.2, 0.4, 0.2],
-                        rotate: [180, 270, 360]
-                    }}
-                    transition={{
-                        duration: 15,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="absolute inset-0 rounded-full border border-white/5 md:scale-125"
-                />
+            <div className="absolute inset-0 z-10 opacity-60">
+                <Scene3D />
             </div>
 
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-black/0 via-black/40 to-black z-0 pointer-events-none" />
