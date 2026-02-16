@@ -20,9 +20,9 @@ export function Opening() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="text-4xl md:text-6xl font-display font-bold text-white tracking-tighter"
+                    className="text-4xl md:text-6xl font-serif italic font-light text-white tracking-widest"
                 >
-                    SAJAL
+                    Sajal
                 </motion.p>
                 <motion.div
                     initial={{ width: 0 }}
@@ -34,7 +34,6 @@ export function Opening() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1 }}
-                    className="text-sm uppercase tracking-widest text-zinc-500"
                 >
                     Portfolio
                 </motion.p>

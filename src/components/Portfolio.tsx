@@ -35,11 +35,11 @@ export function Portfolio() {
     return (
         <section className="py-24 px-4 md:px-10 bg-black">
             <div className="max-w-7xl mx-auto">
-                <div className="flex justify-between items-end mb-16">
+                <div className="flex justify-between items-end mb-16 border-b border-white/10 pb-6">
                     <h2 className="text-sm uppercase tracking-widest text-zinc-500">
                         Selected Works
                     </h2>
-                    <span className="text-zinc-600">2023 — 2024</span>
+                    <span className="font-serif italic text-2xl text-zinc-400">2023 — 2024</span>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-[400px]">
@@ -60,10 +60,10 @@ export function Portfolio() {
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                                    <span className="text-purple-400 text-sm font-bold tracking-widest">{project.category}</span>
+                                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75 ease-out">
+                                    <span className="text-zinc-400 text-xs uppercase tracking-widest mb-2 block">{project.category}</span>
                                     <div className="flex justify-between items-center mt-2">
-                                        <h3 className="text-3xl font-display font-bold text-white mb-2">{project.title}</h3>
+                                        <h3 className="text-4xl font-serif text-white mb-2 italic">{project.title}</h3>
                                     </div>
                                 </div>
                             </div>

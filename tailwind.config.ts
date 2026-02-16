@@ -15,6 +15,7 @@ const config: Config = {
             fontFamily: {
                 sans: ["var(--font-inter)", "sans-serif"],
                 display: ["var(--font-syne)", "sans-serif"],
+                serif: ["var(--font-bodoni)", "serif"],
             },
             animation: {
                 "fade-in": "fade-in 0.5s ease-out forwards",

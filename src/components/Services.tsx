@@ -52,7 +52,7 @@ export function Services() {
                             className="group relative border-b border-zinc-800 py-12 cursor-pointer transition-colors hover:bg-zinc-900/30"
                         >
                             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 relative z-10">
-                                <h3 className="font-display text-4xl md:text-6xl font-bold text-zinc-400 group-hover:text-white transition-colors duration-300">
+                                <h3 className="font-serif text-4xl md:text-6xl text-zinc-500 group-hover:text-white transition-colors duration-500 italic">
                                     {service.title}
                                 </h3>
                                 <div className="flex items-center gap-4">
